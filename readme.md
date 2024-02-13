@@ -7,7 +7,7 @@
        Food application, developed in React Native, consuming external API, with animation library, among others. Study purposes
     <br />
  </p>
-
+ 
 
 ## Technologies
 
@@ -15,40 +15,40 @@
 - Nativewind e TailwinCss
 - React-Native-Reanimated
 - Axios
-- (themealdb-api): [https://www.themealdb.com/api.php]
+- [themealdb-api]: (https://www.themealdb.com/api.php)
 
 
  
 <div align="center">
   <a href="#">
-      <img src="https://github.com/carloscazelattojr/foody/blob/main/asset/p1.jpeg" width="200" alt="preview" />
-    <img src="https://github.com/carloscazelattojr/foody/blob/main/asset/p1.jpeg" width="200" alt="preview" />      
-    <img src="https://github.com/carloscazelattojr/foody/blob/main/asset/p1.jpeg" width="200" alt="preview" />
+      <img src="https://github.com/carloscazelattojr/foody/blob/main/asset/p1.png" width="200" alt="preview" />
+    <img src="https://github.com/carloscazelattojr/foody/blob/main/asset/p2.png" width="200" alt="preview" />      
+    <img src="https://github.com/carloscazelattojr/foody/blob/main/assets/p2.png" width="200" alt="preview" />
   </a>
 </div>
 
-
+[Foody-App-presentation](https://github.com/carloscazelattojr/foody/blob/main/assets/app.mp4)
 
 
 ## libs
 
-npm i nativewind@2.0.11
-npm i tailwindcss@3.3.2 --save-dev
+- npm i nativewind@2.0.11
+- npm i tailwindcss@3.3.2 --save-dev
 
-npm install @react-navigation/native
-npx expo install react-native-screens react-native-safe-area-context
-npm install @react-navigation/stack
-npx expo install react-native-gesture-handler
-npm install react-navigation-shared-element
+- npm install @react-navigation/native
+- npx expo install react-native-screens react-native-safe-area-context
+- npm install @react-navigation/stack
+- npx expo install react-native-gesture-handler
+- npm install react-navigation-shared-element
 
-npm i react-native-heroicons
-npm i react-native-responsive-screen
-npx expo install react-native-reanimated
+- npm i react-native-heroicons
+- npm i react-native-responsive-screen
+- npx expo install react-native-reanimated
 
-npm i @react-native-seoul/masonry-list
-npm i @react-native-async-storage/async-storage
+- npm i @react-native-seoul/masonry-list
+- npm i @react-native-async-storage/async-storage
 
-npm i react-native-youtube-iframe
-npm i react-native-webview
+- npm i react-native-youtube-iframe
+- npm i react-native-webview
 
-npm install react-native-snackbar --save
+- npm install react-native-snackbar --save
