@@ -1,4 +1,33 @@
-- npx create-expo-app meal-app -t
+
+
+# <div align="center">
+  <h1 align="center">FOODY</h1>
+</div>
+<p align="center">
+       Food application, developed in React Native, consuming external API, with animation library, among others. Study purposes
+    <br />
+ </p>
+
+
+## Technologies
+
+- React Native
+- Nativewind e TailwinCss
+- React-Native-Reanimated
+- Axios
+- (themealdb-api): [https://www.themealdb.com/api.php]
+
+
+ 
+<div align="center">
+  <a href="#">
+      <img src="https://github.com/carloscazelattojr/foody/blob/main/asset/p1.jpeg" width="200" alt="preview" />
+    <img src="https://github.com/carloscazelattojr/foody/blob/main/asset/p1.jpeg" width="200" alt="preview" />      
+    <img src="https://github.com/carloscazelattojr/foody/blob/main/asset/p1.jpeg" width="200" alt="preview" />
+  </a>
+</div>
+
+
 
 
 ## libs
