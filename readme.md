@@ -15,7 +15,8 @@
 - Nativewind e TailwinCss
 - React-Native-Reanimated
 - Axios
-- [themealdb-api]: (https://www.themealdb.com/api.php)
+- [themealdb-api](https://www.themealdb.com/api.php)
+- [Video Foody-App](https://github.com/carloscazelattojr/foody/blob/main/assets/app.mp4)
 
 
  
@@ -27,7 +28,6 @@
   </a>
 </div>
 
-[Foody-App-presentation](https://github.com/carloscazelattojr/foody/blob/main/assets/app.mp4)
 
 
 ## libs
