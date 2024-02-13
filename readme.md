@@ -23,7 +23,7 @@
   <a href="#">
       <img src="https://github.com/carloscazelattojr/foody/blob/main/assets/p1.png" width="200" alt="preview" />
     <img src="https://github.com/carloscazelattojr/foody/blob/main/assets/p2.png" width="200" alt="preview" />      
-    <img src="https://github.com/carloscazelattojr/foody/blob/main/assets/p2.png" width="200" alt="preview" />
+    <img src="https://github.com/carloscazelattojr/foody/blob/main/assets/p3.png" width="200" alt="preview" />
   </a>
 </div>
 
