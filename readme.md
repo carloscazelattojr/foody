@@ -16,8 +16,7 @@
 - React-Native-Reanimated
 - Axios
 - [themealdb-api](https://www.themealdb.com/api.php)
-- [Video Foody-App](https://github.com/carloscazelattojr/foody/blob/main/assets/app.mp4)
-
+- [Video Foody](https://www.youtube.com/watch?v=sMsE5DKEtPg&list=PLPdsesveK3VYlClDzuCU_d5U4FgE2Q3SW)
 
  
 <div align="center">
