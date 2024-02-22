@@ -14,6 +14,7 @@
 - React Native
 - Nativewind e TailwinCss
 - React-Native-Reanimated
+- Expo
 - Axios
 - [themealdb-api](https://www.themealdb.com/api.php)
 - [Video Foody](https://www.youtube.com/watch?v=sMsE5DKEtPg&list=PLPdsesveK3VYlClDzuCU_d5U4FgE2Q3SW)
