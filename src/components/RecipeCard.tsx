@@ -1,23 +1,22 @@
 import React from 'react';
 import { Pressable, Text } from 'react-native';
-
-import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import { heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import Animated, { FadeInDown } from 'react-native-reanimated';
-import { CachedImage } from '@/helpers/image';
-import { useNavigation } from '@react-navigation/native';
+import type {NavigationProp} from "@react-navigation/core/src/types";
 
-type ItemProp = {
+export type RecipeItemProp = {
     strMeal: string;
     strMealThumb: string;
     idMeal: string;
 }
 
-type RecipleCardProps = {
+export type RecipeCardProps = {
     index: number;
-    item: ItemProp;
+    item: RecipeItemProp;
+    navigation: NavigationProp<any>;
 }
 
-export function RecipleCard({ item, index, navigation }: RecipleCardProps) {
+export function RecipeCard({ item, index, navigation }: RecipeCardProps) {
 
     let isEven = index % 2 == 0
     return (
@@ -25,7 +24,7 @@ export function RecipleCard({ item, index, navigation }: RecipleCardProps) {
             <Pressable
                 style={{ width: '100%', paddingLeft: isEven ? 0 : 8, paddingRight: isEven ? 8 : 0 }}
                 className='flex justify-center mb-4 space-y-4'
-                onPress={() => navigation.navigate('RecipleDetail', { ...item })}
+                onPress={() => navigation.navigate('RecipeDetail', { ...item })}
             >
 
                 <Animated.Image

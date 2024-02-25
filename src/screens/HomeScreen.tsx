@@ -13,6 +13,7 @@ export function HomeScreen() {
     const [activeCategory, setActiveCategory] = useState('Beef');
     const [categories, setCategories] = useState([]);
     const [meals, setMeals] = useState([]);
+    const [searchTerm, setSearchTerm] = useState(''); // New state variable for the search term
 
 
     const getCategories = async () => {
@@ -26,7 +27,7 @@ export function HomeScreen() {
         }
     }
 
-    const getReciples = async (category = "Beef") => {
+    const getRecipes = async (category = "Beef") => {
         try {
             const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`);
             if (response && response.data) {
@@ -37,23 +38,40 @@ export function HomeScreen() {
         }
     }
 
-    const handleChangeCategory = (category: string) => {
-        getReciples(category);
+    const handleChangeCategory = async (category: string) => {
+        await getRecipes(category);
         setActiveCategory(category);
         setMeals([]);
+    }
+
+    const getSearchResults = async () => {
+        try {
+            const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`);
+            if (response && response.data) {
+                setMeals(response.data?.meals ?? []);
+            }
+        } catch (err) {
+            console.log("Error: ", err);
+        }
     }
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 await getCategories();
-                await getReciples();
+                await getRecipes();
             } catch (error) {
                 console.error("Erro ao carregar dados:", error);
             }
         };
         fetchData();
     }, []);
+
+    useEffect(() => {
+        if (searchTerm) {
+            getSearchResults();
+        }
+    }, [searchTerm]);
 
     return (
         <View className='flex-1 bg-white'>
@@ -84,6 +102,7 @@ export function HomeScreen() {
                         placeholder='Search any recipe'
                         placeholderTextColor={'gray'}
                         className='flex-1 text-base mb-1 pl-3 tracking-wide'
+                        onChangeText={text => setSearchTerm(text)}
                     />
                     <View className='bg-white rounded-full p-3'>
                         <MagnifyingGlassIcon size={hp(2.5)} strokeWidth={3} color={'gray'} />

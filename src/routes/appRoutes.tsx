@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { HomeScreen } from '@/screens/HomeScreen';
 import { WelcomeScreen } from '@/screens/WelcomeScreen';
-import { RecipleDetailScreen } from '@/screens/RecipleDetailScreen';
+import { RecipeDetailScreen } from '@/screens/RecipeDetailScreen';
 
 
 
@@ -16,7 +16,7 @@ export function AppRoutes() {
             <Navigator initialRouteName='Welcome' screenOptions={{ headerShown: false }}>
                 <Screen name='Home' component={HomeScreen} />
                 <Screen name='Welcome' component={WelcomeScreen} />
-                <Screen name='RecipleDetail' component={RecipleDetailScreen} />
+                <Screen name='RecipeDetail' component={RecipeDetailScreen} />
             </Navigator>
         </NavigationContainer>
     );
