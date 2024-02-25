@@ -12,7 +12,7 @@ import Loading from '@/components/Loading';
 import YoutubeIframe from 'react-native-youtube-iframe';
 import Animated, { FadeIn, FadeInDown } from 'react-native-reanimated';
 
-export function RecipleDetailScreen(props) {
+export function RecipeDetailScreen(props) {
 
     const [isFavourite, setIsFavourite] = useState(false);
     const [meal, setMeal] = useState(null);
@@ -265,7 +265,7 @@ export function RecipleDetailScreen(props) {
                                 <Animated.View
                                     entering={FadeInDown.delay(300).duration(700).springify().damping(12)} className='space-y-4'>
                                     <Text style={{ fontSize: hp(2.5) }} className='font-bold flex-1 text-neutral-600'>
-                                        Reciple Video
+                                        Recipe Video
                                     </Text>
                                     <View>
                                         <YoutubeIframe

@@ -14,7 +14,7 @@ type Category = {
 type ListCategoriesProps = {
     categories: Category[];
     activeCategory: string;
-    handleChangeCategory: () => void;
+    handleChangeCategory: (category: string) => void;
 }
 
 export function ListCategories({ categories, activeCategory, handleChangeCategory }: ListCategoriesProps) {
